@@ -1,0 +1,37 @@
+<div class="subtitle">${name}</div>
+
+        <select id="dropdown${column}">
+            <option>Chick-fil-A</option>
+            <option>Cheesecake Factory</option>
+            <option>Wallabys</option>
+        </select>
+        <div id="btn" class="btn" onclick="restaurant(${column})">Go</div>
+
+        <div class="content">
+            <h2>General Sentiment</h2>
+            <div class="score">${genSentVader}</div>
+        </div>
+            <progress max="1" value=${genSentVader}></progress>
+
+        <div class="content">
+            <h2>Customer Service</h2>
+            <div class="score">${custServSentVader}</div>
+        </div>
+            <progress max="1" value=${custServSentVader}></progress>
+
+        <div class="content">
+            <h2>Food Quality</h2>
+            <div class="score">${foodQualSentVader}</div>
+        </div>
+            <progress max="1" value=${foodQualSentVader}></progress>
+
+        <div class="content">
+            <h2>Covid Safety</h2>
+            <div class="score">${covidSentVader}</div>
+        </div>
+            <progress max="1" value=${covidSentVader}></progress>
+        
+        <div class="content">Food Mentions:</div>
+        % for f in commonFoods:
+            <li>${f[0]}: ${f[1]}</li>
+        % endfor

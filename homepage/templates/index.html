@@ -1,0 +1,91 @@
+<%inherit file="base.htm" />
+
+<%block name="content">
+
+    <div id="restaurant1" class="restaurant">
+        <div class="subtitle">Chick Fil A</div>
+
+        <select id="dropdown1">
+            <option>Chick-fil-A</option>
+            <option>Cheesecake Factory</option>
+            <option>Wallabys</option>
+        </select>
+        <div id="btn" class="btn" onclick="restaurant(1)">Go</div>
+
+        <div class="content">
+            <h2>General Sentiment</h2>
+            <div class="score">${genSentVader}</div>
+        </div>
+            <progress max="1" value=${genSentVader}></progress>
+
+        <div class="content">
+            <h2>Customer Service</h2>
+            <div class="score">${custServSentVader}</div>
+        </div>
+            <progress max="1" value=${custServSentVader}></progress>
+
+        <div class="content">
+            <h2>Food Quality</h2>
+            <div class="score">${foodQualSentVader}</div>
+        </div>
+            <progress max="1" value=${foodQualSentVader}></progress>
+
+        <div class="content">
+            <h2>Covid Safety</h2>
+            <div class="score">${covidSentVader}</div>
+        </div>
+            <progress max="1" value=${covidSentVader}></progress>
+        
+        <div class="content">Food Mentions:</div>
+        % for f in commonFoods:
+            <li>${f[0]}: ${f[1]}</li>
+        % endfor
+    </div>
+
+
+    <div id="restaurant2" class="restaurant">
+        <div class="subtitle">Chick Fil A</div>
+
+        <select id="dropdown2">
+            <option>Chick-fil-A</option>
+            <option>Cheesecake Factory</option>
+            <option>Wallabys</option>
+        </select>
+        <div id="btn" class="btn" onclick="restaurant(2)">Go</div>
+
+        <div class="content">
+            <h2>General Sentiment</h2>
+            <div class="score">${genSentVader}</div>
+        </div>
+            <progress max="1" value=${genSentVader}></progress>
+
+        <div class="content">
+            <h2>Customer Service</h2>
+            <div class="score">${custServSentVader}</div>
+        </div>
+            <progress max="1" value=${custServSentVader}></progress>
+
+        <div class="content">
+            <h2>Food Quality</h2>
+            <div class="score">${foodQualSentVader}</div>
+        </div>
+            <progress max="1" value=${foodQualSentVader}></progress>
+
+        <div class="content">
+            <h2>Covid Safety</h2>
+            <div class="score">${covidSentVader}</div>
+        </div>
+            <progress max="1" value=${covidSentVader}></progress>
+        
+        <div class="content">Food Mentions:</div>
+        % for f in commonFoods:
+            <li>${f[0]}: ${f[1]}</li>
+        % endfor
+
+    </div>
+
+
+
+
+    
+</%block>
