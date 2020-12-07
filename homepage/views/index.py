@@ -94,7 +94,7 @@ negCustServ = ["rude", "rudely", "wait", "waiting", "waited",
                "suck", "sucks", "lazy", "liar", "lie", "lied", "argue",
                "argued", "spit", "ridiculous"]
 
-# Words that indicate the review is about covid safety
+# Words that indicate the review is about covid
 covid = ["covid", "covid19", "covid-19", "corona", "coronavirus", "virus",
          "rona", "mask", "masks", "sanitizer", "distancing", "cover",
          "mouth", "mouths", "nose", "noses", "cough", "coughed", "coughing",
